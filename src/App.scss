@@ -1,0 +1,66 @@
+@import './config';
+
+// GENERAL SETTINGS
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  @include reset-gutter;
+  font-family: $main-font-family;
+  background-color: $bg-color;
+  color: #fff;
+  position: relative;
+}
+
+.bg-img-container {
+  position: absolute;
+  z-index: -1;
+  @include flex-all-center;
+  justify-content: flex-end;
+  width: 29rem;
+  height: 100vh;
+  top: 0;
+  left: 13rem;
+  background-color: $sub-bg-color;
+  img {
+    height: 100vh;
+  }
+}
+
+h1,
+p {
+  z-index: 2;
+  @include reset-gutter;
+  position: absolute;
+}
+h1 {
+  font-size: 7.5rem;
+  font-family: $second-font-family;
+  line-height: 9rem;
+  color: $light-color;
+  // text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  top: 33rem;
+  left: 46rem;
+}
+p {
+  font-size: 2.5rem;
+  font-family: $main-font-family;
+  width: 60rem;
+  top: 45rem;
+  left: 47rem;
+  line-height: 3.5rem;
+  color: $light-gray-color;
+}
+
+.top-photo-container {
+  // border: 1px solid red;
+  position: absolute;
+  top: 13rem;
+  right: 3rem;
+}

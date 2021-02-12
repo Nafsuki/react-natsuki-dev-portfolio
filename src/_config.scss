@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat:wght@100;300;400;600;700&display=swap');
+$main-font-family: 'Montserrat', sans-serif;
+$second-font-family: 'Berkshire Swash', cursive;
+
+$main-color: #c92236;
+$light-color: #ffe8e4;
+$light-gray-color: #727272;
+$bg-color: #2d2d2d;
+$sub-bg-color: #363636;
+
+@mixin reset-gutter {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flex-all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
